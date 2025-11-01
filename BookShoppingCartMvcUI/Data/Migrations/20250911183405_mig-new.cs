@@ -5,7 +5,7 @@
 namespace BookShoppingCartMvcUI.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class mignew : Migration
+    public partial class MigNew : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

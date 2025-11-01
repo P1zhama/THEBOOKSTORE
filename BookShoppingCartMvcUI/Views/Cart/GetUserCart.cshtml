@@ -20,14 +20,14 @@
             {
                 <tr>
                     <td>@item.Book.BookName</td>
-                    <td>
+                    <td style="width:300px">
                         @if (!string.IsNullOrEmpty(item.Book.Image))
                         {
-                            <img src="@item.Book.Image" class="card-img-top" style="height: 125px " alt="...">
+                            <img src="/Images/@item.Book.Image" class="card-img-top" style="height: 125px" alt="...">
                         }
                         else
                         {
-                            <img src="/Images/9d40020b-87fd-5c33-bcc4-949b5ae88729.jpg" class="card-img-top" style="height: 125px" alt="....">
+                            <img src="/Images/NoImage.jpeg" class="card-img-top" style="height: 125px" alt="....">
                         }
                     </td>
                     <td>@item.Book.Genre.GenreName</td>

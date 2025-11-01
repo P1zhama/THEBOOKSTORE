@@ -13,7 +13,7 @@ namespace BookShoppingCartMvcUI.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20241201233127_added-tables")]
-    partial class addedtables
+    partial class AddedTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

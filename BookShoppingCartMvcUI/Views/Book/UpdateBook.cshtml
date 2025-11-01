@@ -1,0 +1,51 @@
+﻿@using THEBOOKSTORE.Models.DTOs
+@model BookDTO
+ 
+
+
+<div style="width:50%">
+    <h2 class="m-3 mt-4"> Обновить книгу </h2>
+    <form asp-action="UpdateBook" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Image" />
+
+        <div class="my-2">
+            <label>Название*</label>
+            <input type="text" class="form-control" asp-for="BookName" />
+            <span asp-validation-for="BookName" class="text-danger"></span>
+        </div>
+
+        <div class="my-2">
+            <label>Автор*</label>
+            <input type="text" class="form-control" asp-for="AuthorName" />
+            <span asp-validation-for="AuthorName" class="text-danger"></span>
+        </div>
+
+        <div class="my-2">
+            <label>Жанр*</label>
+            <select class="form-control" asp-for="GenreId" asp-items="Model.GenreList">
+                <option value="">Select Genre</option>
+            </select>
+            <span asp-validation-for="GenreId" class="text-danger"></span>
+        </div>
+
+        <div class="my-2">
+            <label>Цена*</label>
+            <input type="number" class="form-control" asp-for="Price" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="my-2">
+            <label>Книга</label>
+            @if(!string.IsNullOrEmpty(Model.Image))
+            {
+                <img src="/images/@Model.Image" class="mt-1 mb-3" style="width:150px;height:80px"/>
+            }
+            <input type="file" class="form-control" asp-for="ImageFile" />
+        </div>
+
+        <div class="my-2">
+            <button type="submit" class="btn btn-info mt-2">Обновить</button>
+        </div>
+    </form>
+</div>

@@ -13,7 +13,7 @@ namespace BookShoppingCartMvcUI.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20250911183405_mig-new")]
-    partial class mignew
+    partial class MigNew
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

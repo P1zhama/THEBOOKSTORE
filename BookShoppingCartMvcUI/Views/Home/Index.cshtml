@@ -3,7 +3,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-
 <div class="my-3 m-4">
 <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center">
 
@@ -38,13 +37,14 @@
     @foreach(var book in Model.Books)
     {
         <div class="card mx-4 mb-5 shadow-lg bg-white rounded" style="width: 16rem;">
-            @if(!string.IsNullOrEmpty(book.Image))
+            
+            @if (string.IsNullOrWhiteSpace(book.Image))
             {
-                <img src="@book.Image" class="card-img-top" style="height: 155px" alt="...">
+                <img src="/Images/NoImage.jpeg" class="card-img-top" style="height: 155px" alt="...">
             }
             else
             {
-                <img src="/Images/9d40020b-87fd-5c33-bcc4-949b5ae88729.jpg" class="card-img-top" style="height: 155px" alt="....">
+                <img src="/Images/@book.Image" class="card-img-top" style="height: 155px;" alt="....">
             }
             <div class="card-body">
                 <h5 class="card-title">@book.BookName</h5>

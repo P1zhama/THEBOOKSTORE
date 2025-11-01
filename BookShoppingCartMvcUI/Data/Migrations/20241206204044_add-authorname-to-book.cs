@@ -5,7 +5,7 @@
 namespace BookShoppingCartMvcUI.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class addauthornametobook : Migration
+    public partial class AddAuthorNameToBook : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

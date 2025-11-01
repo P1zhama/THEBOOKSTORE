@@ -13,7 +13,7 @@ namespace BookShoppingCartMvcUI.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20241202153713_added statuscode in orderstatus")]
-    partial class addedstatuscodeinorderstatus
+    partial class AddedStatusCodeinorderStatus
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

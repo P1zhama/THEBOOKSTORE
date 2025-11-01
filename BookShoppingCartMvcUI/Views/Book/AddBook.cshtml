@@ -1,0 +1,48 @@
+﻿@using THEBOOKSTORE.Models.DTOs
+@model BookDTO
+
+
+<div style="width:50%">
+
+    <h2 class="m-3 mt-4">Добавить книгу</h2>
+
+    <form asp-action="AddBook" enctype="multipart/form-data">
+
+        <div class="my-2">
+            <label>Книга*</label>
+            <input type="text" class="form-control" asp-for="BookName" />
+            <span asp-validation-for="BookName" class="text-danger"></span>
+        </div>
+
+        <div class="my-2">
+            <label>Автор*</label>
+            <input type="text" class="form-control" asp-for="AuthorName" />
+            <span asp-validation-for="AuthorName" class="text-danger"></span>
+        </div>  
+
+        <div class="my-2">
+            <label>Жанр*</label>
+            <select class="form-control" asp-for="GenreId" asp-items="Model.GenreList">
+                <option value="">Выберите жанр</option>
+            </select>
+            <span asp-validation-for="GenreId" class="text-danger"></span>
+        </div>
+
+        <div class="my-2">
+            <label>Цена*</label>
+            <input type="number" class="form-control" asp-for="Price" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="my-2">
+            <label>Изображение*</label>
+            <input type="file" class="form-control" asp-for="ImageFile" />
+        </div>
+
+        <div class="my-2">
+            <button type="submit" class="btn btn-info">Добавить</button>
+        </div>
+
+    </form>
+
+</div>

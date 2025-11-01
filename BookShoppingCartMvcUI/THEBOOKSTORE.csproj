@@ -5,7 +5,21 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-BookShoppingCartMvcUI-3dd49e87-195b-47c9-8fe7-0ca850f5f69f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\Book1.jpg" />
+    <None Include="wwwroot\Images\Book2.jpg" />
+    <None Include="wwwroot\Images\Book3.jpeg" />
+    <None Include="wwwroot\Images\Book4.jpeg" />
+    <None Include="wwwroot\Images\Book5.jpeg" />
+    <None Include="wwwroot\Images\Book6.jpg" />
+    <None Include="wwwroot\Images\Book7.jpg" />
+    <None Include="wwwroot\Images\Book8.jpeg" />
+    <None Include="wwwroot\Images\NoImage.jpeg" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.6" />
@@ -17,6 +31,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 

@@ -1,0 +1,6 @@
+services:
+  thebookstore:
+    image: ${DOCKER_REGISTRY-}thebookstore
+    build:
+      context: .
+      dockerfile: BookShoppingCartMvcUI/Dockerfile

@@ -13,7 +13,7 @@ namespace BookShoppingCartMvcUI.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20241206204044_add-authorname-to-book")]
-    partial class addauthornametobook
+    partial class AddAuthorNameToBook
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
